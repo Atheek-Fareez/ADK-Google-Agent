@@ -1,92 +1,84 @@
-🚀 Agentic AI Lead Research System (Google ADK)
 
-An intelligent multi-agent AI system built using Google Agent Development Kit (ADK) and Gemini API to perform automated research and structured lead generation.
+# 🚀 Agentic AI Lead Research System (Google ADK)
+
+An intelligent **multi-agent AI system** built using **Google Agent Development Kit (ADK)** and **Gemini API** to perform automated research and structured lead generation.
 
 This project demonstrates how to build modular AI agents that collaborate to solve real-world research problems.
 
-🧠 Project Overview
+---
+
+## 🧠 Project Overview
 
 This system takes a natural language query such as:
 
-"Find me 10 Sri Lankan IT companies that might hire AI interns in Colombo."
+> "Find me 10 Sri Lankan IT companies that might hire AI interns in Colombo."
 
 It then:
 
-Extracts structured intent
+1. Extracts structured intent
+2. Discovers relevant hiring patterns
+3. Generates structured company leads
+4. Outputs clean JSON and CSV results
 
-Discovers relevant hiring patterns
+---
 
-Generates structured company leads
-
-Outputs clean JSON and CSV results
-
-🏗️ Architecture (Multi-Agent Design)
+## 🏗️ Architecture (Multi-Agent Design)
 
 The system consists of three AI agents:
 
-1️⃣ Intent Extractor Agent
+### 1️⃣ Intent Extractor Agent
 
-Converts user query into structured JSON
+* Converts user query into structured JSON
+* Identifies:
 
-Identifies:
+  * Country
+  * City
+  * Role
+  * Company type
+  * Required count
 
-Country
+---
 
-City
+### 2️⃣ Pattern Discovery Agent
 
-Role
+* Analyzes hiring signals
+* Identifies:
 
-Company type
+  * Common AI job titles
+  * Skills keywords
+  * Hiring indicators
+  * Expansion signals
 
-Required count
+---
 
-2️⃣ Pattern Discovery Agent
+### 3️⃣ Lead Generation Agent
 
-Analyzes hiring signals
+* Uses structured intent + patterns
+* Generates:
 
-Identifies:
+  * Company name
+  * Why it matches
+  * Target roles
+  * Contact suggestion
+  * Confidence score
 
-Common AI job titles
+---
 
-Skills keywords
+## 🛠️ Tech Stack
 
-Hiring indicators
+* Python 3.11+
+* Google Agent Development Kit (ADK)
+* Gemini API (Google Generative AI)
+* Asyncio
+* Pydantic
+* JSON-based structured outputs
+* CSV export
 
-Expansion signals
+---
 
-3️⃣ Lead Generation Agent
+## 📂 Project Structure
 
-Uses structured intent + patterns
-
-Generates:
-
-Company name
-
-Why it matches
-
-Target roles
-
-Contact suggestion
-
-Confidence score
-
-🛠️ Tech Stack
-
-Python 3.11+
-
-Google Agent Development Kit (ADK)
-
-Gemini API (Google Generative AI)
-
-Asyncio
-
-Pydantic
-
-JSON-based structured outputs
-
-CSV export
-
-📂 Project Structure
+```
 Google_ADK/
 │
 ├── main.py
@@ -103,88 +95,106 @@ Google_ADK/
 │       └── agent.py
 │
 └── tools/
+```
 
-⚙️ Installation
-1️⃣ Clone the repository
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone the repository
+
+```
 git clone https://github.com/your-username/agentic-ai-lead-research.git
 cd agentic-ai-lead-research
+```
 
-2️⃣ Create virtual environment
+---
+
+### 2️⃣ Create virtual environment
+
+```
 python -m venv .venv
 .\.venv\Scripts\Activate
+```
 
-3️⃣ Install dependencies
+---
+
+### 3️⃣ Install dependencies
+
+```
 pip install -r requirements.txt
+```
 
-4️⃣ Add API Key
+---
 
-Create a .env file:
+### 4️⃣ Add API Key
 
+Create a `.env` file:
+
+```
 GOOGLE_API_KEY=your_api_key_here
+```
 
-▶️ Run the System
+---
+
+## ▶️ Run the System
+
+```
 python main.py
-
+```
 
 The system will:
 
-Generate structured JSON output
+* Generate structured JSON output
+* Save results to `leads.csv`
 
-Save results to leads.csv
+---
 
-📊 Example Output (JSON)
+## 📊 Example Output (JSON)
+
+```json
 {
   "company_name": "Sysco Labs Sri Lanka",
   "why_match": "Strong focus on AI and data science...",
   "target_roles": ["AI/ML Intern", "Data Science Intern"],
   "confidence": 95
 }
+```
 
-🎯 Key Concepts Demonstrated
+---
 
-Agentic AI design
+## 🎯 Key Concepts Demonstrated
 
-Multi-agent collaboration
+* Agentic AI design
+* Multi-agent collaboration
+* Structured LLM outputs
+* Asynchronous execution
+* JSON validation & parsing
+* AI-driven automation workflow
 
-Structured LLM outputs
+---
 
-Asynchronous execution
+## 💡 Real-World Applications
 
-JSON validation & parsing
+* AI-powered recruitment research
+* Market intelligence automation
+* Sales lead generation
+* Competitive company analysis
+* Hiring trend discovery
 
-AI-driven automation workflow
+---
 
-💡 Real-World Applications
+## 🚀 Future Improvements
 
-AI-powered recruitment research
+* Web search tool integration
+* Vector database for company knowledge
+* Memory-enabled sessions
+* Agent chaining with orchestration
+* Deployment as API service
 
-Market intelligence automation
+---
 
-Sales lead generation
-
-Competitive company analysis
-
-Hiring trend discovery
-
-🚀 Future Improvements
-
-Web search tool integration
-
-Vector database for company knowledge
-
-Memory-enabled sessions
-
-Agent chaining with orchestration
-
-Deployment as API service
-
-👨‍💻 Author
-
-Atheek Fareez
-BSc (Hons) IT – Specializing in Artificial Intelligence
-Focused on ML, LLM systems, RAG pipelines, and Agentic AI architectures.
-
-🔥 Why This Project Is Valuable
+# 🔥 Why This Project Is Valuable
 
 This project demonstrates:
 
@@ -193,4 +203,16 @@ This project demonstrates:
 ✔ Practical LLM orchestration
 ✔ Industry-relevant AI automation
 
-It shows ability beyond simple chatbot development — it demonstrates system-level AI engineering.
+It shows ability beyond simple chatbot development — it demonstrates **system-level AI engineering**.
+
+---
+
+If you want, next I can give you:
+
+* ⭐ Ultra-professional README with badges
+* 📈 Architecture diagram
+* 🧠 LinkedIn project description
+* 💼 CV-ready project summary
+* 🚀 How to deploy this as an API
+
+Tell me what you want next 😎
